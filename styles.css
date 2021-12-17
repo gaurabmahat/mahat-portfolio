@@ -1,18 +1,40 @@
-* {
+*{
     box-sizing: border-box;
 }
 
 html, body {
+    height: 100%;
     margin: 0;
     padding: 0;
 }
 
-body{
-    background-color: rgb(221, 251, 255);
+.parent-section {
+    display: flex;
+    min-height: 100%;
 }
 
-.nav ul{
-    margin: 0;
+.content-section {
+    float: left;
+}
+
+.left {
+    border-right: 1px solid black;
+    width: 100px;
+}
+
+.right {
+    width: 100%;
+    min-width: 400px;
+}
+
+#name {
+    color: blue;
+    text-align: center;
+    font-size: 30px;
+}
+
+#m-color {
+    color: red;
 }
 
 .nav li {
@@ -21,35 +43,75 @@ body{
 
 .nav a {
     display: inline-block;
-    padding: .5em;
+    padding: 1em;
 }
 
 .main-nav {
-    text-align: center;
-    font-size: 1.1em;
-    border-bottom: 1px solid white;
-}
-
-.main-nav li {
-    padding: 0 5%;
+    text-align: left;
 }
 
 .nav a:hover {
-    background-color: grey;
+    background-color: lightblue;
 }
 
-.main-header{
-    background-size: cover;
-    background-color: lightgray;
-    padding-bottom: 30px;
+.paragraph {
+    margin-top: 10em;
+    margin-bottom: 10em;
+    padding-left: 56px;
 }
 
-.content-section {
-    margin: 1em;
+.paragraph > * {
+    margin: 0;;
 }
 
-.container {
-    max-width: 400px;
-    margin: 0 auto;
+.paragraph p {
+    font-size: 25px;
+}
+
+.paragraph h1 {
+    font-size: 70px;
+}
+
+.paragraph h3 {
+    font-size: 40px;
+}
+
+#g-color {
+    color: blue;
+}
+
+.footer {
+    margin: 0;
+    padding: 1em;
+    padding-bottom: 0;
+    min-width: 550px;
+    display: flex;
+}
+
+.footer-left ul>li {
+    list-style-type: none;
+}
+
+.footer-right p {
+    margin: 0;
+    display: inline-block;
+    padding: 1em;
+}
+
+#email, #location {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.footer-right{
+    position: fixed;
+    bottom: 0;
+}
+
+.footer-left {
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    bottom: 0;
     text-align: left;
 }
