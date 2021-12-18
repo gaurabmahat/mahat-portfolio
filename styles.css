@@ -8,6 +8,13 @@ html, body {
     padding: 0;
 }
 
+body {
+    background-image: url("Images/vines.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
 .parent-section {
     display: flex;
     min-height: 100%;
@@ -20,6 +27,7 @@ html, body {
 .left {
     border-right: 1px solid black;
     width: 100px;
+    background-color: rgb(242, 243, 248);
 }
 
 .right {
@@ -44,6 +52,7 @@ html, body {
 .nav a {
     display: inline-block;
     padding: 1em;
+    text-decoration: none;
 }
 
 .main-nav {
@@ -51,13 +60,25 @@ html, body {
 }
 
 .nav a:hover {
-    background-color: lightblue;
+    background-color: lightslategray;
+}
+
+.hide {
+    display: none;
+    padding-left: 200px;
+    font-size: 20px;
+}
+
+.contact-link:hover + .hide{
+    display: block;
+    color: red;
 }
 
 .paragraph {
-    margin-top: 10em;
+    padding-top: 8%;
     margin-bottom: 10em;
     padding-left: 56px;
+    max-width: 600px;
 }
 
 .paragraph > * {
@@ -83,6 +104,7 @@ html, body {
 .footer {
     margin: 0;
     padding: 1em;
+    padding-left: 2em;
     padding-bottom: 0;
     min-width: 550px;
     display: flex;
@@ -101,6 +123,10 @@ html, body {
 #email, #location {
     font-size: 30px;
     font-weight: bold;
+}
+
+a:link {
+    text-decoration: none;
 }
 
 .footer-right{
