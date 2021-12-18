@@ -1,0 +1,117 @@
+*{
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.parent-section {
+    display: flex;
+    min-height: 100%;
+}
+
+.content-section {
+    float: left;
+}
+
+.left {
+    border-right: 1px solid black;
+    width: 100px;
+}
+
+.right {
+    width: 100%;
+    min-width: 400px;
+}
+
+#name {
+    color: blue;
+    text-align: center;
+    font-size: 30px;
+}
+
+#m-color {
+    color: red;
+}
+
+.nav li {
+    display: inline;
+}
+
+.nav a {
+    display: inline-block;
+    padding: 1em;
+}
+
+.main-nav {
+    text-align: left;
+}
+
+.nav a:hover {
+    background-color: lightblue;
+}
+
+.paragraph {
+    margin-top: 10em;
+    margin-bottom: 10em;
+    padding-left: 56px;
+}
+
+.paragraph > * {
+    margin: 0;;
+}
+
+.paragraph p {
+    font-size: 25px;
+}
+
+.paragraph h1 {
+    font-size: 70px;
+}
+
+.paragraph h3 {
+    font-size: 40px;
+}
+
+#g-color {
+    color: blue;
+}
+
+.footer {
+    margin: 0;
+    padding: 1em;
+    padding-bottom: 0;
+    min-width: 550px;
+    display: flex;
+}
+
+.footer-left ul>li {
+    list-style-type: none;
+}
+
+.footer-right p {
+    margin: 0;
+    display: inline-block;
+    padding: 1em;
+}
+
+#email, #location {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.footer-right{
+    position: fixed;
+    bottom: 0;
+}
+
+.footer-left {
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    bottom: 0;
+    text-align: left;
+}
