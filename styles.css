@@ -134,7 +134,6 @@ html, body {
     margin: 0;
     display: flex;
     bottom: 0;
-    position: fixed;
     justify-content: center;
 }
 
