@@ -84,6 +84,7 @@ html, body {
 .div-body-paragraph {
     width: 50%;
     float: left;
+    margin-bottom: 10%;
 }
 
 .paragraph {
@@ -119,12 +120,17 @@ html, body {
 .div-body-image {
     width: 50%;
     float: right;
+    margin-bottom: 10%;
 }
 
 .my-image {
     display: inline-block;
     padding-left: 20%;
     padding-top: 5%;
+}
+
+#my-image-size {
+    width: 250px;
 }
 
 .footer {
@@ -134,7 +140,9 @@ html, body {
     margin: 0;
     display: flex;
     bottom: 0;
+    position: fixed;
     justify-content: center;
+    padding-top: .5em;
 }
 
 #main-footer-div p{
@@ -150,3 +158,16 @@ html, body {
     font-size: 25px;
     font-weight: bold;
 }
+
+@media (orientation: portrait) {
+    .main-body {
+       flex-direction: column;
+    }
+
+    #my-image-size {
+        width: 400px;
+    }
+
+}
+
+
