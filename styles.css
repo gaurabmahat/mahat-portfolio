@@ -8,10 +8,21 @@ html, body {
     padding: 0;
 }
 
+body {
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
 .main-header {
     background-color: lightblue;
     background-size: cover;
     display: flex;
+    position: fixed;
+    width: 100%;
 }
 
 #header-div-logo {
@@ -76,6 +87,21 @@ html, body {
     background-color: rgb(255, 255, 255, .3);
 }
 
+section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+
+section#home {
+    background-color: #e1f2f7;
+}
+
+section#aboutMe {
+    background-color: #faf0dc;
+}
+
 .main-body {
     display: flex;
     width: 100%;
@@ -84,7 +110,7 @@ html, body {
 .div-body-paragraph {
     width: 50%;
     float: left;
-    margin-bottom: 10%;
+    margin-bottom: 10%;    
 }
 
 .paragraph {
@@ -130,7 +156,7 @@ html, body {
 }
 
 #my-image-size {
-    width: 250px;
+    width: 50%;
 }
 
 .footer {
@@ -161,7 +187,7 @@ html, body {
 
 @media (orientation: portrait) {
     .main-body {
-       flex-direction: column;
+       flex-direction: row;
     }
 
     #my-image-size {
